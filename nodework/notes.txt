@@ -1,0 +1,51 @@
+1. Express External lib(Webframework)
+    it add helpfull utulities to Node.js and facilitate the rendering of dynamic HTTP
+    it is part of MEAN/MERN stack
+
+
+
+
+1. to use Express it (NPM required)
+
+Express.JS
+_______________________________
+|                              |
+|       Express.js             |
+|______________________________|
+_______________________________
+|                              |
+|       connect.js             |
+|______________________________|
+_______________________________
+|                              |
+|          http.js             |
+|______________________________|
+_______________________________
+|                              |
+|          Node.js             |
+|______________________________|
+
+NPM - Node Package Manager 
+
+app.use(express.static(root, [options]))
+
+
+
+
+TO GET DATA FROM URL-------------------------------
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
+
+For GET Request access data by req.query
+For POST Request access data by req.body
+
+
+********************************************************************************************************
+
+var mysql = require("mysql2)
+exports.connection = mysql.createConnection({
+    host : "localhost"
+    user : 'root'
+    password : 'mysql'
+    databse : "dbname"
+})

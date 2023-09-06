@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Express Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <h2 style="text-align:center; color: red">Employee Registration Page</h2>
+    <div style="width:40%;" class="container">
+        <form action="/saveEmployee" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmpid" class="form-label">Employee ID</label>
+                <input type="text" name= "empid" class="form-control" id="exampleInputEmpid" placeholder="Enter your Employee ID">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Full Name</label>
+                <input type="text" name= "fname" class="form-control" id="exampleInputName" placeholder="Enter your full Name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" name= "email" class="form-control" id="exampleInputEmail1"  placeholder="Enter your Email ID" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="form-label">Mobile No</label>
+              <input type="password" name= "password" class="form-control" id="exampleInputPassword" placeholder="Enter your Mobile Nuymber">
+          </div>
+            <div class="mb-3">
+                <label for="exampleInputMobile" class="form-label">Mobile No</label>
+                <input type="number" name= "Mobile" class="form-control" id="exampleInputMobile" placeholder="Enter your Mobile Nuymber">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputSalary" class="form-label">Salary Amount</label>
+                <input type="text" name= "salary" class="form-control" id="exampleInputSalary" placeholder="Enter your Salary">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit"  class="btn btn-primary" value="Save using post" formaction="/saveEmployee" formmethod="post">Save using post</button>
+          </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
